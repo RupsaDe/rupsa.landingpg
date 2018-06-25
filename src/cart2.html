@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content= "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Landing Page</title>
+		<link rel="stylesheet" href="./css/bootstrap.css">
+		<link rel="stylesheet" href="./scss/custom.css">
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/popper.min.js"></script>
+
+<style>
+	.page-title:after{
+				content: ""; /* This is necessary for the pseudo element to work. */ 
+				display:block;/* This will put the pseudo element on its own line. */
+				margin: 0 auto; /* This will center the border. */
+				width: 20%; /* Change this to whatever width you want. */
+				padding: 5px; /* This creates some space between the element and the border. */
+				border-bottom: 5px solid #3576FE ;
+				}
+	.head:after{
+				content: ""; /* This is necessary for the pseudo element to work. */ 
+				display:block;/* This will put the pseudo element on its own line. */
+				margin: 0 auto; /* This will center the border. */
+				width:12vw; /* Change this to whatever width you want. */
+				padding: 5px; /* This creates some space between the element and the border. */
+				border-bottom: 2px solid ;
+				position: relative;
+				top:25%
+			}
+	nav ul li h5 a.active{
+	color: #F8297B
+}
+</style>
+</head>
+	<body class="container pt-5">
+	<h2 class="modal-title text-center page-title pb-1" style="color: #F8297B;">Your Details</h2><br>
+	<h5 style="color: #3576FE" class="text-center">Fill up your details to proceed</h5>
+	<br>
+	<nav class="navbar navbar-expand-md mb-5 d-flex justify-content-around border" style="border-radius:39px;box-shadow:1px 1px 7px  #d9d9d9">
+  	<ul class="navbar-nav">
+    <li class="nav-item">
+      <h5><a class="nav-link active"  href="#">Summary</a></h5>
+    </li>
+   <div class="head" style="color:#F8297B"></div>
+    <li class="nav-item">
+      <h5><a class="nav-link active" href="#">Delivery</a></h5>
+    </li>
+   <div class="head"></div>
+    <li class="nav-item">
+      <h5><a class="nav-link disabled" href="#">Checkout</a></h5>
+    </li>
+    <div class="head"></div>
+    <li class="nav-item">
+      <h5><a class="nav-link disabled" href="#">Payment</a></h5>
+    </li>
+  	</ul>
+ 	 
+	</nav>
+<div class="card " style="border-radius: 15px;box-shadow: 3px 15px 20px #d9d9d9;margin-bottom:50px">
+ 	<div class="card-body ">
+        <form action="/action_page.php" class="p-5">
+        		<div class="form-group">
+       			<label style="color:#F8297B; "><h4>Personal Info</h4></label>
+    			</div>
+    			<div class="form-group">
+			    <input type="email" class="form-control border-left-0 border-top-0 border-right-0 " id="email" placeholder="Name" style="border-radius: 0px;border-width: 2px">
+			  </div>
+
+			  <div class="form-group">
+			    <input type="email" class="form-control border-left-0 border-top-0 border-right-0" id="email" placeholder="Email ID" style="border-radius: 0px;border-width: 2px">
+			  </div>
+			  <div class="form-group">
+			    <input type="password" class="form-control border-left-0 border-top-0 border-right-0" id="pwd" placeholder="Phone No." style="border-radius: 0px;border-width: 2px">
+			  </div><br><br>
+			  <div class="form-group">
+       			<label style="color:#F8297B; "><h4>Delivery Address</h4></label>
+    			</div>
+    			<div class="form-group">
+			    <input type="email" class="form-control border-left-0 border-top-0 border-right-0" id="email" placeholder="House/Flat No." style="border-radius: 0px;border-width: 2px">
+			  </div>
+
+			  <div class="form-group">
+			    <input type="email" class="form-control border-left-0 border-top-0 border-right-0" id="email" placeholder="Street Address" style="border-radius: 0px;border-width: 2px">
+			  </div>
+			  <div class="form-inline">
+			  <div class="form-group">
+			    <input type="password" class="form-control border-left-0 border-top-0 border-right-0" id="pwd" placeholder="City" style="width:35vw;border-radius: 0px;border-width: 2px">
+			  </div>
+			  <div class="form-group" >
+			    <input type="password" class="form-control ml-2 border-left-0 border-top-0 border-right-0" id="pwd" placeholder="State" style="width:35vw;border-radius: 0px;border-width: 2px"></div>
+			  </div><br>
+			  <div class="form-group">
+			    <input type="password" class="form-control border-left-0 border-top-0 border-right-0" id="pwd" placeholder="Pincode" style="border-radius: 0px;border-width: 2px">
+			  </div>
+			 
+		</form>
+     </div>     
+	</div>
+ <div class="text-center mb-5"><button type="button" class="btn btn-lg text-white py-3 mt-5 mb-5" style="background-color: #F8297B;border-radius: 39px;width: 36%;box-shadow: 5px 5px 20px #d9d9d9"><h3>Proceed</h3></button></div>
+
+</body>
+</html>

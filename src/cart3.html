@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content= "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Landing Page</title>
+		<link rel="stylesheet" href="./css/bootstrap.css">
+		<link rel="stylesheet" href="./scss/custom.css">
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/popper.min.js"></script>
+
+<style>
+	.page-title:after{
+				content: ""; /* This is necessary for the pseudo element to work. */ 
+				display:block;/* This will put the pseudo element on its own line. */
+				margin: 0 auto; /* This will center the border. */
+				width: 20%; /* Change this to whatever width you want. */
+				padding: 5px; /* This creates some space between the element and the border. */
+				border-bottom: 5px solid #3576FE ;
+				}
+.head:after{
+				content: ""; /* This is necessary for the pseudo element to work. */ 
+				display:block;/* This will put the pseudo element on its own line. */
+				margin: 0 auto; /* This will center the border. */
+				width:12vw; /* Change this to whatever width you want. */
+				padding: 5px; /* This creates some space between the element and the border. */
+				border-bottom: 2px solid ;
+				position: relative;
+				top:25%
+			}
+
+	.element {  
+  float: left;
+  shape-outside: ellipse(50px 50px at 30% );
+  width: 200px;
+  height: 400px;
+
+  
+}
+
+nav ul li h5 a.active{
+	color: #F8297B
+}
+
+</style>
+</head>
+	<body class="container pt-4">
+	<h2 class="modal-title text-center page-title pb-1" style="color: #F8297B;">Checkout</h2><br>
+		
+	<nav class="navbar navbar-expand-md mb-5 d-flex justify-content-around border" style="border-radius:39px;box-shadow:1px 1px 7px  #d9d9d9">
+  	<ul class="navbar-nav">
+    <li class="nav-item">
+      <h5><a class="nav-link active"  href="#">Summary</a></h5>
+    </li>
+   <div class="head" style="color:#F8297B"></div>
+    <li class="nav-item">
+      <h5><a class="nav-link active" href="#">Delivery</a></h5>
+    </li>
+   <div class="head" style="color:#F8297B"></div>
+    <li class="nav-item">
+      <h5><a class="nav-link active" href="#">Checkout</a></h5>
+    </li>
+    <div class="head"></div>
+    <li class="nav-item">
+      <h5><a class="nav-link disabled" href="#">Payment</a></h5>
+    </li>
+  	</ul>
+ 	 
+	</nav>
+
+
+	
+
+	<div class="card " style="border-radius: 15px;box-shadow: 3px 15px 20px  #d9d9d9;margin-bottom:50px;shape-outside: ellipse(50px 50px at 30% );">
+ 	<div class="card-body ">
+      	<div class="border-bottom pb-4"><b>Order ID</b><br>#123b807
+      	<button type="button" class="btn btn-default pull-right">Unpaid</button>
+         </div>
+         <div class="border-bottom pb-4"><b>Items</b><br>Name of the product-Jet Black-L<span class="pull-right">x1</span>
+         <br>Name of the product-Jet Black-L<span class="pull-right">x1</span>
+         <br>Name of the product-Jet Black-L<span class="pull-right">x1</span>
+         <br>Name of the product-Jet Black-L<span class="pull-right">x1</span>
+      	 </div> 
+      	  <div class="border-bottom pb-4"><b>Delivery</b>
+      	  <br>Bagus Fikri
+         <br>Jl. Kalosari B.l
+         <br>Purwokerto Utara
+         </div> 
+         <div class="border-bottom pb-4">
+         Item<span class="pull-right">₹ 1996</span>
+         <br>Delivery fee<span class="pull-right">₹ 100</span>
+      	 </div> 
+      	 <b>Total<span class="pull-right">₹ 2096</span></b>
+	</div>
+	</div>
+	 <div class="text-center mb-5"><button type="submit" class="btn btn-lg text-white py-3 mt-5 mb-5" style="background-color: #F8297B;border-radius: 39px;width: 36%;box-shadow: 5px 5px 20px #d9d9d9"><h3>Pay</h3></button></div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+.box{
+    width: 100%;
+    height: 230px;
+    border: 25px ;
+ 	background-color: white;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.24);
+	}
+.title:after{
+				content: ""; /* This is necessary for the pseudo element to work. */ 
+				display:block;/* This will put the pseudo element on its own line. */
+				margin: 0 auto; /* This will center the border. */
+				width: 10%; /* Change this to whatever width you want. */
+				padding: 5px; /* This creates some space between the element and the border. */
+				border-bottom: 5px solid white ;
+				
+}
+.page-title3:after{
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+        display:inline-block;/* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        width: 7%; /* Change this to whatever width you want. */
+        padding: 5px; /* This creates some space between the element and the border. */
+        border-bottom: 5px solid white ;
+        }
+
+.page-title4:after{
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+        display:inline-block;/* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        width: 2%; /* Change this to whatever width you want. */
+        padding: 5px; /* This creates some space between the element and the border. */
+        border-bottom: 5px solid white;
+        }
+.page-title:after{
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+        display:block;/* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        width: 10%; /* Change this to whatever width you want. */
+        padding: 5px; /* This creates some space between the element and the border. */
+        border-bottom: 5px solid #3576FE ;
+        }
+.middle {
+  transition: .4s ease;
+  opacity: 0;
+  
+
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+.text {
+  background-color:#3576FE;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  position: absolute;
+  bottom:100%;
+  left:50%;
+  width:100%;
+  border-bottom-right-radius:15px;
+  border-bottom-left-radius:15px;
+
+}
+.category{
+  background-color: #3576FE;
+  position: absolute;
+  bottom:100%;
+  left:50%;
+  width:100%;
+  border-bottom-right-radius:15px;
+  border-bottom-left-radius:15px;
+}
+.container1{
+  box-shadow: 3px 3px 15px rgba(0,0,0,0.16)
+  border-top-right-radius:15px;
+  border-top-left-radius:15px;
+}
+.container1:hover .image {
+  opacity: 0.04;
+}
+
+.container1:hover .middle {
+  opacity:.76;
+}
+.hovering{
+  font-size:35px;
+  border-radius: 50%;
+  box-shadow: 0 16px 30px rgba(0,0,0,0.16);
+}
+.hovering:hover{
+    box-shadow:0 4px 5px rgba(0,0,0,0.1);
+    font-size:30px;
+    border-radius:50%;
+  
+}

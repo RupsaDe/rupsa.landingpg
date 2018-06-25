@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content= "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Landing Page</title>
+		<link rel="stylesheet" href="./css/bootstrap.css">
+		<link rel="stylesheet" href="./scss/custom.css">
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/popper.min.js"></script>
+
+<style>
+	.page-title:after{
+				content: ""; /* This is necessary for the pseudo element to work. */ 
+				display:block;/* This will put the pseudo element on its own line. */
+				margin: 0 auto; /* This will center the border. */
+				width: 20%; /* Change this to whatever width you want. */
+				padding: 5px; /* This creates some space between the element and the border. */
+				border-bottom: 5px solid #3576FE ;
+				}
+    .dot1{
+    height: 34px;
+    width: 29px;
+    background-color:black;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: baseline;
+    position:relative;
+    margin-bottom: -4px
+    }
+
+	.dot {
+    height: 32px;
+    width: 29px;
+    background-color: #3576FE;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 0.5%;
+}
+.head:after{
+                content: ""; /* This is necessary for the pseudo element to work. */ 
+                display:block;/* This will put the pseudo element on its own line. */
+                margin: 0 auto; /* This will center the border. */
+                width:12vw; /* Change this to whatever width you want. */
+                padding: 5px; /* This creates some space between the element and the border. */
+                border-bottom: 2px solid ;
+                position: relative;
+                top:25%
+            }
+
+nav ul li h5 a.active{
+    color: #F8297B
+}
+
+</style>
+
+
+
+
+
+
+
+
+</head>
+<body class="container pt-5">
+	<h1 class="modal-title text-center page-title pb-3" style="color: #F8297B;"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;CART&nbsp;&nbsp;<button class="btn btn-circle" style="border-radius: 50%;background-color:#3576FE;color: white;"><b style="font-size:32px;padding:0px 3.7px">4</b></button></h1><br>
+
+
+<nav class="navbar navbar-expand-md mb-5 d-flex justify-content-around border" style="border-radius:39px;box-shadow:1px 1px 7px  #d9d9d9">
+    <ul class="navbar-nav">
+    <li class="nav-item">
+      <h5><a class="nav-link active"  href="#">Summary</a></h5>
+    </li>
+   <div class="head"></div>
+    <li class="nav-item">
+      <h5><a class="nav-link disabled" href="#">Delivery</a></h5>
+    </li>
+   <div class="head"></div>
+    <li class="nav-item">
+      <h5><a class="nav-link disabled" href="#">Checkout</a></h5>
+    </li>
+    <div class="head"></div>
+    <li class="nav-item">
+      <h5><a class="nav-link disabled" href="#">Payment</a></h5>
+    </li>
+    </ul>
+     
+    </nav>
+
+
+<div class="card" style="border-radius: 15px;box-shadow: 3px 15px 20px #d9d9d9">
+  <div class="card-body">
+        
+          <img src="./images/1.png" style="height:150px;float: left;" class="mx-4 mb-2">
+          
+            <button type="button" class="btn btn-link card-link pull-right" data-toggle="collapse" href="#collapseOne">
+                <span class="fa fa-caret-up" style="font-size:42px;color:#FF4891"></span>
+              </button>
+              <h3 style="color: #3576FE;">Name of the product</h3>
+              <h4 style="color: #FF4891;">INR 499</h4>
+                
+              
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+              <span class="pr-5"><button class="btn btn-circle" style="border-radius: 50%;background-color: black;color: black;"><b>L</b></button>
+              <span style="font-size: 24px;" class="d-inline-flex">&nbsp;&nbsp;Jet Black</span></span>
+              <span class="pr-5"><button class="btn btn-circle" style="border-radius: 50%;background-color: black;color: white;"><b>L</b></button><span style="font-size: 24px">&nbsp;&nbsp;Size</span></span>
+              <span style="font-size: 24px;" class="pr-5">#47234807</span><br><br>
+            <div class="my-2 border-bottom border-dark" style="font-size:20px"><span style="color:#FF4891 ">Note:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <a href="#" class="text-muted"><i class="fa fa-trash-o" style="font-size:36px"></i></a>
+            <span class="btn-group pull-right">
+              <button type="button" class="btn btn-outline-primary">1</button>
+              <button type="button" class="btn btn-outline-primary">+Add</button>
+            </span>
+          </div>
+    </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#collapseOne").on("hide.bs.collapse", function(){
+    $(".card-link").html('<span class="fa fa-caret-down" style="font-size:42px" ></span>');
+  });
+  $("#collapseOne").on("show.bs.collapse", function(){
+    $(".card-link").html('<span class="fa fa-caret-up" style="color:#FF4891;font-size:40px"></span>');
+  });
+});
+</script>
+
+ <div class="card" style="border-radius: 15px;box-shadow: 3px 3px 15px #d9d9d9">
+  <div class="card-body">
+        
+          <img src="./images/1.png" style="height:150px;float: left;" class="mx-4 mb-2">
+          
+            <button type="button" class="btn btn-link card-link pull-right" data-toggle="collapse" href="#collapseTwo">
+                <span class="fa fa-caret-down" style="font-size:42px;"></span>
+              </button>
+              <h3 style="color: #3576FE;">Name of the product</h3>
+              <h4 style="color: #FF4891;">INR 499</h4>
+                
+              
+            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+              <span class="pr-5"><button class="btn btn-circle" style="border-radius: 50%;background-color: black;color: black;"><b>L</b></button>
+              <span style="font-size: 24px;" class="d-inline-flex">&nbsp;&nbsp;Jet Black</span></span>
+              <span class="pr-5"><button class="btn btn-circle" style="border-radius: 50%;background-color: black;color: white;"><b>L</b></button><span style="font-size: 24px">&nbsp;&nbsp;Size</span></span>
+              <span style="font-size: 24px;" class="pr-5">#47234807</span><br><br>
+            <div class="my-2 border-bottom border-dark" style="font-size:20px"><span style="color:#FF4891 ">Note:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <a href="#" class="text-muted"><i class="fa fa-trash-o" style="font-size:36px"></i></a>
+            <span class="btn-group pull-right">
+              <button type="button" class="btn btn-outline-primary">1</button>
+              <button type="button" class="btn btn-outline-primary">+Add</button>
+            </span>
+          </div>
+    </div>
+</div>
+<script>
+$(document).ready(function(){
+  $("#collapseTwo").on("hide.bs.collapse", function(){
+    $(".card-link").html('<span class="fa fa-caret-down" style="font-size:42px" ></span>');
+  });
+  $("#collapseTwo").on("show.bs.collapse", function(){
+    $(".card-link").html('<span class="fa fa-caret-up" style="color:#FF4891;font-size:40px"></span>');
+  });
+});
+</script>
+
+
+<div class="card" style="border-radius: 15px;box-shadow: 3px 3px 15px #d9d9d9">
+  <div class="card-body">
+        
+          <img src="./images/1.png" style="height:150px;float: left;" class="mx-4 mb-2">
+          
+            <button type="button" class="btn btn-link card-link pull-right" data-toggle="collapse" href="#collapseThree">
+                <span class="fa fa-caret-down" style="font-size:42px;1"></span>
+              </button>
+              <h3 style="color: #3576FE;">Name of the product</h3>
+              <h4 style="color: #FF4891;">INR 499</h4>
+                
+              
+            <div id="collapseThree" class="collapse " data-parent="#accordion">
+              <span class="pr-5"><button class="btn btn-circle" style="border-radius: 50%;background-color: black;color: black;"><b>L</b></button>
+              <span style="font-size: 24px;" class="d-inline-flex">&nbsp;&nbsp;Jet Black</span></span>
+              <span class="pr-5"><button class="btn btn-circle" style="border-radius: 50%;background-color: black;color: white;"><b>L</b></button><span style="font-size: 24px">&nbsp;&nbsp;Size</span></span>
+              <span style="font-size: 24px;" class="pr-5">#47234807</span><br><br>
+            <div class="my-2 border-bottom border-dark" style="font-size:20px"><span style="color:#FF4891 ">Note:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <a href="#" class="text-muted"><i class="fa fa-trash-o" style="font-size:36px"></i></a>
+            <span class="btn-group pull-right">
+              <button type="button" class="btn btn-outline-primary">1</button>
+              <button type="button" class="btn btn-outline-primary">+Add</button>
+            </span>
+          </div>
+    </div>
+</div>
+<script>
+$(document).ready(function(){
+  $("#collapseThree").on("hide.bs.collapse", function(){
+    $(".card-link").html('<span class="fa fa-caret-down" style="font-size:42px" ></span>');
+  });
+  $("#collapseThree").on("show.bs.collapse", function(){
+    $(".card-link").html('<span class="fa fa-caret-up" style="color:#FF4891;font-size:40px"></span>');
+  });
+});
+</script>
+
+
+<div class="card" style="border-radius: 15px;box-shadow: 3px 3px 15px #d9d9d9">
+  <div class="card-body">
+        
+          <img src="./images/1.png" style="height:150px;float: left;" class="mx-4 mb-2">
+          
+            <button type="button" class="btn btn-link card-link pull-right" data-toggle="collapse" href="#collapseFour">
+                <span class="fa fa-caret-down" style="font-size:42px;"></span>
+              </button>
+              <h3 style="color: #3576FE;">Name of the product</h3>
+              <h4 style="color: #FF4891;">INR 499</h4>
+                
+              
+            <div id="collapseFour" class="collapse " data-parent="#accordion">
+              <span class="pr-5"><button class="btn btn-circle" style="border-radius: 50%;background-color: black;color: black;"><b>L</b></button>
+              <span style="font-size: 24px;" class="d-inline-flex">&nbsp;&nbsp;Jet Black</span></span>
+              <span class="pr-5"><button class="btn btn-circle" style="border-radius: 50%;background-color: black;color: white;"><b>L</b></button><span style="font-size: 24px">&nbsp;&nbsp;Size</span></span>
+              <span style="font-size: 24px;" class="pr-5">#47234807</span><br><br>
+            <div class="my-2 border-bottom border-dark" style="font-size:20px"><span style="color:#FF4891 ">Note:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <a href="#" class="text-muted"><i class="fa fa-trash-o" style="font-size:36px"></i></a>
+            <span class="btn-group pull-right">
+              <button type="button" class="btn btn-outline-primary">1</button>
+              <button type="button" class="btn btn-outline-primary">+Add</button>
+            </span>
+          </div>
+    </div>
+</div> 
+<script>
+$(document).ready(function(){
+  $("#collapseFour").on("hide.bs.collapse", function(){
+    $(".card-link").html('<span class="fa fa-caret-down" style="font-size:42px" ></span>');
+  });
+  $("#collapseFour").on("show.bs.collapse", function(){
+    $(".card-link").html('<span class="fa fa-caret-up" style="color:#FF4891;font-size:40px"></span>');
+  });
+});
+</script>
+<div class="text-center mb-5"><button type="button" class="btn btn-lg text-white py-3 mt-5 mb-5" style="background-color: #F8297B;border-radius: 39px;width: 36%;box-shadow: 5px 5px 20px #d9d9d9"><h3>Proceed</h3></button></div>
+
+</body>
+</html>
